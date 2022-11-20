@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int arr[100], i, limit;
+    printf("How many elements you want to store inside the array: ");
+    scanf("%d", &limit);
+    printf("Enter any %d array elements: ", limit);
+    for(i=0; i<limit; i++)
+        scanf("%d", &arr[i]);
+    printf("\nValues stored at odd position (with array and its index) are:\n");
+    for(i=0; i<limit; i++)
+    {
+        if(i%2!=0)
+            printf("arr[%d] = %d\n", i, arr[i]);
+    }
+    getch();
+    return 0;
+}
